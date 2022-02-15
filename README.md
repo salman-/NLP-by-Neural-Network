@@ -34,6 +34,7 @@ Let's assume we would like to create sequences of `NGRAM=1` for a given text lik
 
 The following video presents how the tokens with different ngrams (from 1 to 3) are generated.
 
+![NGramm](https://user-images.githubusercontent.com/4312244/154011999-9d3c63d6-dbc9-4ced-954b-8293fbd58891.gif)
 
 In Tensorflow framework, we can use the following code to tokenize a text:
 
