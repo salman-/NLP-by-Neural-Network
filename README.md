@@ -139,3 +139,13 @@ embeding(token_indices)
 </pre>
 
 This layer creates an embedding matrix (`input_dim*output_dim`) and after each itteration the values of this matrix gets updated.
+
+Also, we can use `Transfer-learning` using the following code:
+
+<pre>
+embedding_layer = hub.KerasLayer("https://tfhub.dev/google/universal-sentence-encoder/4",
+                                 input_shape=[], # shape of inputs coming to our model 
+                                 dtype=tf.string, # data type of inputs coming to the USE layer
+                                 trainable=False, # keep the pretrained weights (we'll create a feature extractor)
+                                 name="USE")
+</pre>
