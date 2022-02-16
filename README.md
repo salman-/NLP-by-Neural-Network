@@ -124,3 +124,5 @@ For example, in the below table we defined the meaning of the two words such as 
 The vertical column is a sample of "dimensions" which can define the words.
 As the word "Laptop" has more connection to the features such as "Technology", "Device" and "Entertainment", 
 it receives higher values in these features. However, laptop got very low scores to the other dimensions such as "Food" or "Body"
+
+![Embedding matrix](https://user-images.githubusercontent.com/4312244/154244418-d333fc53-4341-45c9-8226-7247331e9ba5.png)
