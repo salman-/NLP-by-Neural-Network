@@ -113,3 +113,14 @@ for i in token_indices:
 
 text_vector
 </pre>
+
+
+## Embedding
+
+Embedding is an approach to present the meaning of the text's features (extracted tokens).
+We can define **"the meaning of each word"** by a 300 dimension vector and for each dimention we can have a value from -1 to 1. 
+The higher the value, there is more connection in between the that token and that specific feature.
+For example, in the below table we defined the meaning of the two words such as  "Laptop" and "Glasses".
+The vertical column is a sample of "dimensions" which can define the words.
+As the word "Laptop" has more connection to the features such as "Technology", "Device" and "Entertainment", 
+it receives higher values in these features. However, laptop got very low scores to the other dimensions such as "Food" or "Body"
