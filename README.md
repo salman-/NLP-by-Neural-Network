@@ -126,3 +126,17 @@ As the word "Laptop" has more connection to the features such as "Technology", "
 it receives higher values in these features. However, laptop got very low scores to the other dimensions such as "Food" or "Body"
 
 ![Embedding matrix](https://user-images.githubusercontent.com/4312244/154244418-d333fc53-4341-45c9-8226-7247331e9ba5.png)
+
+The Tensorflow can generate the embedding matrix and improve the values in each itteration.
+
+<pre>
+from tensorflow.keras.layers import Embedding
+embeding = Embedding(input_dim=len(ngram_tokens),  # Number of extracted vocabularies
+                     embeddings_initializer='uniform', 
+                     output_dim=128,
+                     name= 'embeding_layer')
+                     
+embeding(token_indices)
+</pre>
+
+This layer creates an embedding matrix (`input_dim*output_dim`) and after each itteration the values of this matrix gets updated.
